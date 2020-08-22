@@ -1,4 +1,4 @@
-# farmer_ui_flutter
+# Farmer App UI - Flutter
 
 A new Flutter project.
 
