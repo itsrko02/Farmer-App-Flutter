@@ -80,7 +80,6 @@ class _LoginPageState extends State<LoginPage>
                       begin: Alignment.topLeft,
                       end: Alignment.bottomRight,
                       colors: [
-                        Colors.lightGreenAccent,
                         Colors.lightGreen,
                         Colors.green,
                         Colors.lightGreen,
