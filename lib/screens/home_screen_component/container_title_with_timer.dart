@@ -17,7 +17,6 @@ class _TitleWithTimerState extends State<TitleWithTimer> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     timeForTimer = ((_hour * 60 * 60) + (_min * 60) + _sec);
     Timer.periodic(Duration(seconds: 1), (Timer t) {

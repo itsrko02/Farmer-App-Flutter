@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'components/bottom_navbar.dart';
+import 'package:farmer_ui_flutter/screens/loading_screen.dart';
+//import 'package:farmer_ui_flutter/screens/login_screen.dart';
+
 void main() {
   runApp(FarmerApp());
 }
@@ -14,7 +16,7 @@ class FarmerApp extends StatelessWidget {
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       debugShowCheckedModeBanner: false,
-      home: BottomNavBar(),
+      home: LoadingScreen(),
     );
   }
 }

@@ -3,6 +3,7 @@ import 'package:farmer_ui_flutter/constants.dart';
 import 'package:farmer_ui_flutter/screens/home_screen_component/header.dart';
 import 'package:farmer_ui_flutter/screens/home_screen_component/container_title_with_timer.dart';
 import 'package:farmer_ui_flutter/screens/home_screen_component/sliding_container.dart';
+import 'package:farmer_ui_flutter/components/app_drawer.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -17,13 +18,10 @@ class _HomePageState extends State<HomePage> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: kPrimaryColor,
+        backgroundColor: kPrimaryColor.withOpacity(0.8),
         elevation: 0,
-        leading: IconButton(
-          icon: Icon(Icons.menu),
-          onPressed: () {},
-        ),
       ),
+      drawer: CustomAppDrawer(),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
